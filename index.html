@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="bg-neutral-100">
+
+    <header class="flex justify-between container mx-auto mt-2.5">
+        <h2 class="font-semibold"><button class="bg-indigo-600 text-slate-50 px-2 py-2 rounded">News</button><span
+                class="text-indigo-600"> Portal</span></h2>
+        <div class="avatar">
+            <ul class="text-black font-medium pt-2.5">
+                <li class="inline-block px-4"> <a href=""><button
+                            class="hover:bg-indigo-600 hover:text-white px-1 py-1 rounded">News</button></a> </li>
+                <li class="inline-block pr-4"> <a href=""><button
+                            class="hover:bg-indigo-600 hover:text-white px-1 py-1 rounded">Blog</button></a> </li>
+            </ul>
+            <div class="w-12 rounded-full">
+                <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            </div>
+        </div>
+    </header>
+
+    <hr class="border border-slate-200 container mx-auto mt-2.5">
+
+    <nav>
+        <div class="flex justify-between text-slate-500 font-semibold container mx-auto mt-2.5" id="newsList">
+        </div>
+    </nav>
+
+    <main class="container mx-auto mt-2.5">
+
+        <section class="mb-2.5" id="alert-container">
+        </section>
+
+        <section id="card-Container">
+        </section>
+
+        <!-- Modal Body -->
+        <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+        <div class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h3 class="font-bold text-lg" id="title-container"></h3>
+                <p class="py-4" id="details-container"></p>
+                <div class="modal-action">
+                    <label for="my-modal-6" class="btn btn-error">Close</label>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer justify-center p-4 bg-white font-semibold text-slate-500 container mx-auto my-4 rounded-lg">
+        <p>Copyright © 2023 - All right reserved</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
